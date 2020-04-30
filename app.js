@@ -110,3 +110,20 @@ ui.clearFields();
     e.preventDefault();
 }
 );
+
+
+document.querySelector('.invoice-list').addEventListener('click', function(e) {
+    // console.log(123);
+    
+    // instantiate UI
+    const ui = new UI();
+    
+    // delete product
+    ui.deleteInvoice(e.target);
+    
+    //show alert
+    
+    ui.showAlert('Product Removed!', 'success');
+    
+    e.preventDefault();
+    });
