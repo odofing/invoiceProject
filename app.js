@@ -57,6 +57,7 @@ setTimeout(function (){
 
     deleteInvoice(target) {
         if (target.className === 'delete') {
+            if(confirm('Are you sure you want to delete?'))
             target.parentElement.parentElement.remove();
                 }
 
